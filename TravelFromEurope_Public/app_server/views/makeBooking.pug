@@ -1,0 +1,43 @@
+extends layout
+block content
+    .row.banner
+        .col-12
+            h1=h1= pageHeader.title
+    .row
+        .col-12.col-md-8
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="name") Name
+                    .col-12.col-sm-10
+                        input#name.form-control(name="name")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="address") Address
+                    .col-12.col-sm-10
+                        input#address.form-control(name="address")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="email") Email
+                    .col-12.col-sm-10
+                        input#email.form-control(name="email")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="phone") Phone Number
+                    .col-12.col-sm-10
+                        input#phone.form-control(name="phone")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="card") Card Number
+                    .col-12.col-sm-10
+                        input#card.form-control(name="card")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="nums") Number Travelling (max 4)
+                    .col-12.col-sm-2
+                        input#nums.form-control(name="nums")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="others") Other Names (if applicable)
+                    .col-12.col-sm-10
+                        input#others.form-control(name="others")
+                        br
+                        input#others2.form-control(name="others")
+                        br
+                        input#others3.form-control(name="others")
+                button.btn.btn-primary Confirm Booking
+            .col-12.col-md-4
+    br
+    br

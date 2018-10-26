@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .row.banner
+        .col-12
+            h1=h1= pageHeader.title
+    .row
+        .col-12.col-md-8
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="uName") User Name
+                    .col-12.col-sm-10
+                        input#uName.form-control(name="uName")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="pass") Password
+                    .col-12.col-sm-10
+                        input#pass.form-control(name="pass" type="password")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="confirm") Confirm Password
+                    .col-12.col-sm-10
+                        input#confirm.form-control(name="confirm" type="password")
+                button.btn.btn-primary Register
+                    .col-12.col-md-4
+    br
+    br

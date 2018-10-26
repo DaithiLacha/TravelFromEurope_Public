@@ -1,0 +1,20 @@
+{
+  "name": "travelfromeurope",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "font-awesome": "^4.7.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.3.6",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.4",
+    "pug": "2.0.0-beta11"
+  }
+}

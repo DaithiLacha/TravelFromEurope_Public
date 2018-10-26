@@ -1,0 +1,20 @@
+extends layout
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+      each detail in details
+        .card
+          .card-block
+            h4
+              a(href="/destinations/bookings")= detail.name
+            p= 'Capital: ' + detail.capital
+            p= 'Population: ' + detail.population
+            p= 'Religions: ' + detail.religions
+            p= 'Currency: ' + detail.currency
+            p= 'Exchange Rate: ' + detail.exchangeRate
+    .col-12.col-md-4
+      p.lead= info
